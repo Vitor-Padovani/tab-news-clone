@@ -10,21 +10,21 @@ const page = `
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
             min-height: 100vh;
             padding: 40px 0;
         }
         .resume-container {
             max-width: 1200px;
             margin: 0 auto;
-            background: white;
-            box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+            background: #1e1e2e;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
             border-radius: 15px;
             overflow: hidden;
         }
         .header-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #2d3561 0%, #3e2a5e 100%);
+            color: #e8e8f0;
             padding: 60px 40px;
             text-align: center;
         }
@@ -32,11 +32,13 @@ const page = `
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 10px;
+            color: #ffffff;
         }
         .header-section .subtitle {
             font-size: 1.3rem;
             opacity: 0.9;
             margin-bottom: 20px;
+            color: #c9c9d9;
         }
         .contact-info {
             display: flex;
@@ -46,56 +48,57 @@ const page = `
             margin-top: 20px;
         }
         .contact-info a {
-            color: white;
+            color: #a8a8d8;
             text-decoration: none;
-            transition: opacity 0.3s;
+            transition: color 0.3s;
         }
         .contact-info a:hover {
-            opacity: 0.7;
+            color: #ffffff;
         }
         .section {
             padding: 50px 40px;
+            color: #d0d0e0;
         }
         .section-title {
             font-size: 2rem;
             font-weight: 700;
-            color: #667eea;
+            color: #7c8fd8;
             margin-bottom: 30px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #7c8fd8;
             padding-bottom: 10px;
         }
         .experience-item, .project-item {
             margin-bottom: 40px;
             padding-left: 20px;
-            border-left: 3px solid #764ba2;
+            border-left: 3px solid #8b6da8;
         }
         .experience-title {
             font-size: 1.4rem;
             font-weight: 600;
-            color: #333;
+            color: #e8e8f0;
             margin-bottom: 5px;
         }
         .experience-meta {
-            color: #666;
+            color: #a0a0b8;
             font-size: 0.95rem;
             margin-bottom: 15px;
         }
         .experience-meta i {
             margin-right: 5px;
-            color: #764ba2;
+            color: #9b82b4;
         }
         .skill-badge {
             display: inline-block;
-            background: #667eea;
-            color: white;
+            background: #3d4a7a;
+            color: #e8e8f0;
             padding: 8px 15px;
             border-radius: 20px;
             margin: 5px;
             font-size: 0.9rem;
         }
         .award-badge {
-            background: #ffd700;
-            color: #333;
+            background: #d4af37;
+            color: #1a1a2e;
             padding: 10px 20px;
             border-radius: 25px;
             display: inline-block;
@@ -107,11 +110,14 @@ const page = `
         }
         .lang-name {
             font-weight: 600;
-            color: #333;
+            color: #e8e8f0;
         }
         .lang-level {
-            color: #666;
+            color: #a0a0b8;
             font-style: italic;
+        }
+        .section.alt-bg {
+            background-color: #252535;
         }
         @media (max-width: 768px) {
             .header-section h1 {
@@ -128,7 +134,7 @@ const page = `
         <!-- Header -->
         <div class="header-section">
             <h1>Vitor Padovani</h1>
-            <div class="subtitle">Pesquisador | Desenvolvedor</div>
+            <div class="subtitle">Desenvolvedor de Software | Pesquisador</div>
             <div class="contact-info">
                 <a href="mailto:vitor.azpadovani@gmail.com"><i class="fas fa-envelope"></i> vitor.azpadovani@gmail.com</a>
                 <a href="http://linkedin.com/in/vitor-azevedo-padovani-55461122b"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -137,9 +143,9 @@ const page = `
         </div>
 
         <!-- About -->
-        <div class="section" style="background-color: #f8f9fa;">
+        <div class="section alt-bg">
             <h2 class="section-title"><i class="fas fa-user"></i> Sobre Mim</h2>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #c0c0d0;">
                 Sou estudante de último ano de Ciência da Computação na Universidade Estadual de Maringá, com paixão por pesquisa aplicada, desenvolvimento de software e tecnologias de imagem médica. Minha experiência abrange desde sistemas de coordenação multi-robôs e visão computacional até streaming de dados em tempo real para simulações neurocirúrgicas. Contribuí para digitalização na área da saúde, venci hackathons e conduzi pesquisa internacional no Canadá. Combino fortes habilidades técnicas em C++, Python e engenharia de dados com excelentes capacidades de comunicação e compromisso em criar soluções tecnológicas significativas.
             </p>
         </div>
@@ -186,7 +192,7 @@ const page = `
         </div>
 
         <!-- Projects -->
-        <div class="section" style="background-color: #f8f9fa;">
+        <div class="section alt-bg">
             <h2 class="section-title"><i class="fas fa-code"></i> Projetos em Destaque</h2>
             
             <div class="project-item">
@@ -225,10 +231,10 @@ const page = `
         </div>
 
         <!-- Skills -->
-        <div class="section" style="background-color: #f8f9fa;">
+        <div class="section alt-bg">
             <h2 class="section-title"><i class="fas fa-tools"></i> Habilidades</h2>
             
-            <h5 class="mb-3" style="color: #764ba2;">Proficiente</h5>
+            <h5 class="mb-3" style="color: #9b82b4;">Proficiente</h5>
             <div class="mb-4">
                 <span class="skill-badge">C++</span>
                 <span class="skill-badge">Python</span>
@@ -242,26 +248,26 @@ const page = `
                 <span class="skill-badge">Data Structures</span>
             </div>
 
-            <h5 class="mb-3" style="color: #764ba2;">Familiarizado</h5>
+            <h5 class="mb-3" style="color: #9b82b4;">Familiarizado</h5>
             <div class="mb-4">
-                <span class="skill-badge" style="background: #9f7aea;">JavaScript</span>
-                <span class="skill-badge" style="background: #9f7aea;">Java</span>
-                <span class="skill-badge" style="background: #9f7aea;">VTK</span>
-                <span class="skill-badge" style="background: #9f7aea;">Processamento de Imagem</span>
-                <span class="skill-badge" style="background: #9f7aea;">HTML</span>
-                <span class="skill-badge" style="background: #9f7aea;">Pandas</span>
-                <span class="skill-badge" style="background: #9f7aea;">OpenIGTLink</span>
-                <span class="skill-badge" style="background: #9f7aea;">Docker</span>
+                <span class="skill-badge" style="background: #4a5a8a;">JavaScript</span>
+                <span class="skill-badge" style="background: #4a5a8a;">Java</span>
+                <span class="skill-badge" style="background: #4a5a8a;">VTK</span>
+                <span class="skill-badge" style="background: #4a5a8a;">Processamento de Imagem</span>
+                <span class="skill-badge" style="background: #4a5a8a;">HTML</span>
+                <span class="skill-badge" style="background: #4a5a8a;">Pandas</span>
+                <span class="skill-badge" style="background: #4a5a8a;">OpenIGTLink</span>
+                <span class="skill-badge" style="background: #4a5a8a;">Docker</span>
             </div>
 
-            <h5 class="mb-3" style="color: #764ba2;">Soft Skills</h5>
+            <h5 class="mb-3" style="color: #9b82b4;">Soft Skills</h5>
             <div>
-                <span class="skill-badge" style="background: #48bb78;">Iniciativa</span>
-                <span class="skill-badge" style="background: #48bb78;">Oratória</span>
-                <span class="skill-badge" style="background: #48bb78;">Comunicação Bilíngue</span>
-                <span class="skill-badge" style="background: #48bb78;">Adaptabilidade</span>
-                <span class="skill-badge" style="background: #48bb78;">Perseverança</span>
-                <span class="skill-badge" style="background: #48bb78;">Colaboração</span>
+                <span class="skill-badge" style="background: #3d6b5a;">Iniciativa</span>
+                <span class="skill-badge" style="background: #3d6b5a;">Oratória</span>
+                <span class="skill-badge" style="background: #3d6b5a;">Comunicação Bilíngue</span>
+                <span class="skill-badge" style="background: #3d6b5a;">Adaptabilidade</span>
+                <span class="skill-badge" style="background: #3d6b5a;">Perseverança</span>
+                <span class="skill-badge" style="background: #3d6b5a;">Colaboração</span>
             </div>
         </div>
 
@@ -269,21 +275,21 @@ const page = `
         <div class="section">
             <h2 class="section-title"><i class="fas fa-trophy"></i> Prêmios e Certificações</h2>
             
-            <h5 class="mb-3" style="color: #764ba2;">Vitórias em Hackathons</h5>
+            <h5 class="mb-3" style="color: #9b82b4;">Vitórias em Hackathons</h5>
             <div class="mb-4">
                 <span class="award-badge"><i class="fas fa-medal"></i> 1º Lugar - Hackathon Elotech (IA e Gestão Pública)</span>
                 <span class="award-badge"><i class="fas fa-medal"></i> 1º Lugar - Hackathon Bitzen (Estimativa de Software)</span>
             </div>
 
-            <h5 class="mb-3" style="color: #764ba2;">Certificações</h5>
+            <h5 class="mb-3" style="color: #9b82b4;">Certificações</h5>
             <div>
-                <div class="mb-2"><i class="fas fa-certificate" style="color: #667eea;"></i> <strong>Google Cloud Foundations</strong> - Conceitos de computação em nuvem e serviços Google Cloud</div>
-                <div><i class="fas fa-certificate" style="color: #667eea;"></i> <strong>CS50x: Introduction to Computer Science (Harvard University)</strong> - Fundamentos abrangentes de ciência da computação</div>
+                <div class="mb-2"><i class="fas fa-certificate" style="color: #7c8fd8;"></i> <strong>Google Cloud Foundations</strong> - Conceitos de computação em nuvem e serviços Google Cloud</div>
+                <div><i class="fas fa-certificate" style="color: #7c8fd8;"></i> <strong>CS50x: Introduction to Computer Science (Harvard University)</strong> - Fundamentos abrangentes de ciência da computação</div>
             </div>
         </div>
 
         <!-- Languages -->
-        <div class="section" style="background-color: #f8f9fa;">
+        <div class="section alt-bg">
             <h2 class="section-title"><i class="fas fa-language"></i> Idiomas</h2>
             <div class="row">
                 <div class="col-md-4">
@@ -308,7 +314,7 @@ const page = `
         </div>
 
         <!-- Footer -->
-        <div class="section text-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px;">
+        <div class="section text-center" style="background: linear-gradient(135deg, #2d3561 0%, #3e2a5e 100%); color: #e8e8f0; padding: 30px;">
             <p class="mb-0">© 2025 Vitor Azevedo Padovani | Construído com paixão por tecnologia e inovação</p>
         </div>
     </div>
