@@ -137,7 +137,7 @@ const page = `
             <div class="subtitle">Desenvolvedor de Software | Pesquisador</div>
             <div class="contact-info">
                 <a href="mailto:vitor.azpadovani@gmail.com"><i class="fas fa-envelope"></i> vitor.azpadovani@gmail.com</a>
-                <a href="http://linkedin.com/in/vitor-azevedo-padovani-55461122b"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.linkedin.com/in/vitorpadovani/"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/Vitor-Padovani"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
