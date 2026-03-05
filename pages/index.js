@@ -4,19 +4,20 @@ const page = `
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vitor — Ciência da Computação</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Vitor Padovani</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
 <style>
   :root {
     --bg: #0a0a0a;
     --surface: #111111;
     --border: #1e1e1e;
     --text: #e8e4dc;
-    --muted: #6b6660;
-    --accent: #c8a97e;
-    --accent2: #7eb8c8;
-    --accent3: #c87e9a;
-    --green: #7ec87e;
+    --muted: #7c8a7d;
+    --accent: #2DFE54;
+    --accent2: #2DFE54;
+    --accent3: #2DFE54;
+    --green: #2DFE54;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,7 +59,7 @@ const page = `
   }
 
   .nav-logo {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 20px;
     color: var(--accent);
     letter-spacing: 0.02em;
@@ -73,7 +74,7 @@ const page = `
   .nav-links a {
     color: var(--muted);
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     transition: color 0.2s;
@@ -98,7 +99,7 @@ const page = `
   }
 
   .hero-eyebrow {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
@@ -108,23 +109,15 @@ const page = `
     gap: 12px;
   }
 
-  .hero-eyebrow::before {
-    content: '';
-    width: 32px;
-    height: 1px;
-    background: var(--accent);
-  }
-
   .hero-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: clamp(52px, 6vw, 88px);
     line-height: 0.95;
     margin-bottom: 32px;
     color: var(--text);
   }
 
-  .hero-name em {
-    font-style: italic;
+  .hero-name p {
     color: var(--accent);
   }
 
@@ -146,7 +139,7 @@ const page = `
   .tag {
     border: 1px solid var(--border);
     padding: 4px 12px;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
@@ -166,7 +159,7 @@ const page = `
   .btn {
     padding: 12px 28px;
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
@@ -263,7 +256,7 @@ const page = `
   .stat:hover { background: var(--surface); }
 
   .stat-number {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 36px;
     color: var(--accent);
     line-height: 1;
@@ -271,7 +264,7 @@ const page = `
   }
 
   .stat-label {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
@@ -299,13 +292,13 @@ const page = `
   }
 
   .section-num {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--accent);
     letter-spacing: 0.1em;
   }
 
   .section-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: clamp(32px, 4vw, 52px);
     line-height: 1;
     color: var(--text);
@@ -352,14 +345,14 @@ const page = `
   }
 
   .timeline-date {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--accent);
   }
 
   .timeline-where {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--muted);
     margin-top: 4px;
   }
@@ -374,7 +367,7 @@ const page = `
   }
 
   .timeline-role {
-    font-family: 'Syne', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: var(--text);
@@ -398,7 +391,7 @@ const page = `
     background: var(--surface);
     border: 1px solid var(--border);
     padding: 3px 10px;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.08em;
     color: var(--muted);
   }
@@ -447,7 +440,7 @@ const page = `
   .project-card.green::before { background: var(--green); }
 
   .project-num {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--accent);
     letter-spacing: 0.1em;
     margin-bottom: 24px;
@@ -459,14 +452,14 @@ const page = `
   .project-card.green .project-num { color: var(--green); }
 
   .project-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 26px;
     color: var(--text);
     margin-bottom: 8px;
   }
 
   .project-sub {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--accent);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -488,7 +481,7 @@ const page = `
     background: var(--surface);
     border-left: 2px solid var(--accent);
     padding: 12px 16px;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--text);
     margin-bottom: 20px;
   }
@@ -505,7 +498,7 @@ const page = `
   }
 
   .skill-group-title {
-    font-family: 'Syne', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -531,7 +524,7 @@ const page = `
   }
 
   .skill-level {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--muted);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -566,7 +559,7 @@ const page = `
   .soft-tag {
     border: 1px solid var(--border);
     padding: 8px 16px;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--muted);
     letter-spacing: 0.08em;
     transition: all 0.2s;
@@ -596,19 +589,31 @@ const page = `
   .award-card:hover { background: var(--surface); }
 
   .award-icon {
-    font-size: 28px;
     margin-bottom: 16px;
+    color: var(--accent);
   }
 
+  .award-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    fill: none;
+  }
+
+  .award-card:nth-child(2) .award-icon { color: var(--accent2); }
+  .award-card:nth-child(3) .award-icon { color: var(--accent3); }
+  .award-card:nth-child(4) .award-icon { color: var(--green); }
+
   .award-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 20px;
     color: var(--text);
     margin-bottom: 8px;
   }
 
   .award-org {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--accent);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -639,7 +644,7 @@ const page = `
   .cert-card:hover { background: var(--surface); }
 
   .cert-issuer {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--accent);
@@ -647,7 +652,7 @@ const page = `
   }
 
   .cert-name {
-    font-family: 'Syne', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 15px;
     font-weight: 700;
     color: var(--text);
@@ -667,13 +672,13 @@ const page = `
   }
 
   .lang-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 22px;
     color: var(--text);
   }
 
   .lang-level {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted);
@@ -689,13 +694,12 @@ const page = `
   }
 
   .footer-left {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: 36px;
     color: var(--text);
   }
 
-  .footer-left em {
-    font-style: italic;
+  .footer-left p {
     color: var(--accent);
   }
 
@@ -721,7 +725,6 @@ const page = `
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .hero-eyebrow { animation: fadeUp 0.6s ease 0.2s both; }
   .hero-name { animation: fadeUp 0.6s ease 0.35s both; }
   .hero-desc { animation: fadeUp 0.6s ease 0.5s both; }
   .hero-tags { animation: fadeUp 0.6s ease 0.65s both; }
@@ -753,7 +756,7 @@ const page = `
 <body>
 
 <nav>
-  <span class="nav-logo">Vitor</span>
+  <span class="nav-logo">>_</span>
   <ul class="nav-links">
     <li><a href="#experience">Experiência</a></li>
     <li><a href="#projects">Projetos</a></li>
@@ -766,8 +769,8 @@ const page = `
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Ciência da Computação · Maringá, Brasil</div>
-    <h1 class="hero-name">Vitor<br><em>Padovani</em></h1>
+    <div class="hero-eyebrow">Estudante e dev</div>
+    <h1 class="hero-name">Vitor<br><p>Padovani</p></h1>
     <p class="hero-desc">
       Estudante de CC na Universidade Estadual de Maringá desenvolvendo sistemas em produção, pipelines de pesquisa e simulações em tempo real — da automação hospitalar ao rastreamento neurocirúrgico em Montreal.
     </p>
@@ -1102,25 +1105,25 @@ const page = `
   </div>
   <div class="awards-row">
     <div class="award-card">
-      <div class="award-icon">🥇</div>
+      <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M4.5 8.5 3 6l4-1m12.5 3.5L21 6l-4-1"/><path d="M12 6V2"/><path d="m9 2 3 4 3-4"/><path d="M12 13v-2"/><path d="M12 16h.01"/></svg></div>
       <div class="award-title">1º Lugar — Hackathon Elotech</div>
       <div class="award-org">IA & Gestão Pública · Nov 2024 · UEM / SECOMP</div>
       <p class="award-desc">Sistema baseado em IA para reduzir o absenteísmo na saúde pública — vencedor da trilha de Inteligência Artificial e Gestão Pública.</p>
     </div>
     <div class="award-card">
-      <div class="award-icon">🥇</div>
+      <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M4.5 8.5 3 6l4-1m12.5 3.5L21 6l-4-1"/><path d="M12 6V2"/><path d="m9 2 3 4 3-4"/><path d="M12 13v-2"/><path d="M12 16h.01"/></svg></div>
       <div class="award-title">1º Lugar — Hackathon Bitzen</div>
       <div class="award-org">Precisão em Estimativas de Software · 2025</div>
       <p class="award-desc">Solução desenvolvida para melhorar a precisão, adaptabilidade e confiabilidade de estimativas de esforço em software, conquistando o primeiro lugar entre todas as submissões.</p>
     </div>
     <div class="award-card">
-      <div class="award-icon">🏛️</div>
+      <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 22V8l9-6 9 6v14"/><path d="M6 22v-6h12v6"/><path d="M12 22v-4"/><path d="M3 8h18"/><path d="M9 10v.01M15 10v.01"/></svg></div>
       <div class="award-title">Manna no Museu</div>
       <div class="award-org">Museu Oscar Niemeyer · Mar 2023 · Curitiba, PR</div>
       <p class="award-desc">Apresentei um experimento interativo de processamento de imagens para estudantes e professores — unindo arte, tecnologia e educação por meio de demonstrações práticas de computer vision.</p>
     </div>
     <div class="award-card">
-      <div class="award-icon">🍁</div>
+      <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20A14.5 14.5 0 0 0 12 2"/><path d="M2 12h20"/></svg></div>
       <div class="award-title">Bolsa de Pesquisa Mitacs</div>
       <div class="award-org">Governo do Canadá · 2025</div>
       <p class="award-desc">Financiamento de pesquisa competitivo que viabilizou o estágio em motion capture e simulação neurocirúrgica no Montreal Neurological Institute-Hospital.</p>
@@ -1131,10 +1134,9 @@ const page = `
 <!-- CONTACT -->
 <footer id="contact">
   <div class="footer-left">
-    Vamos<br><em>conversar.</em>
+    Vamos<br><p>conversar_</p>
   </div>
   <div class="footer-contact">
-    <a href="https://parusya.com.br" target="_blank">parusya.com.br</a>
     <a href="mailto:vitor.azpadovani@gmail.com">vitor.azpadovani@gmail.com</a>
     <a href="https://linkedin.com/in/vitorpadovani/" target="_blank">LinkedIn</a>
     <a href="https://github.com/Vitor-Padovani" target="_blank">GitHub</a>
