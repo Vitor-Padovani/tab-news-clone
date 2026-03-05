@@ -731,6 +731,24 @@ const page = `
   .hero-cta { animation: fadeUp 0.6s ease 0.8s both; }
   .hero-stats { animation: fadeUp 0.6s ease 0.95s both; }
 
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: var(--accent);
+    margin-left: 2px;
+    animation: blink 3s steps(1) infinite;
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+
   /* MOBILE */
   @media (max-width: 900px) {
     nav { padding: 16px 24px; }
@@ -772,15 +790,15 @@ const page = `
     <div class="hero-eyebrow">Estudante e dev</div>
     <h1 class="hero-name">Vitor<br><p>Padovani</p></h1>
     <p class="hero-desc">
-      Estudante de CC na Universidade Estadual de Maringá desenvolvendo sistemas em produção, pipelines de pesquisa e simulações em tempo real — da automação hospitalar ao rastreamento neurocirúrgico em Montreal.
+      Estudante de Ciência da Computação na Universidade Estadual de Maringá desenvolvendo sistemas em produção, pipelines de pesquisa e simulações em tempo real. Da automação hospitalar ao rastreamento neurocirúrgico em Montreal.
     </p>
     <div class="hero-tags">
-      <span class="tag">Engenharia Backend</span>
-      <span class="tag">Computer Vision</span>
+      <span class="tag">Backend</span>
+      <span class="tag">Algoritmos</span>
+      <span class="tag">Visão Computacional</span>
       <span class="tag">Imagens Médicas</span>
       <span class="tag">Sistemas Embarcados</span>
       <span class="tag">Engenharia de Dados</span>
-      <span class="tag">Full-Stack</span>
     </div>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">Entre em Contato</a>
@@ -808,8 +826,8 @@ const page = `
         <div class="stat-label">Campeão de hackathon</div>
       </div>
       <div class="stat">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Países e laboratórios</div>
+        <div class="stat-number">2</div>
+        <div class="stat-label">Países em pesquisa aplicada</div>
       </div>
     </div>
   </div>
@@ -830,8 +848,8 @@ const page = `
         <div class="timeline-where">Montreal<br>Neurological Inst.</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Estagiário de Pesquisa — Motion Capture e Simulação Neurocirúrgica</div>
-        <p class="timeline-desc">Desenvolvi uma camada de comunicação em C++ substituindo o PLUS Toolkit para integração entre OptiTrack Motive e 3D Slicer via OpenIGTLink — sustentando 300+ pacotes/segundo para simulação neurocirúrgica em tempo real com baixa latência. Integrei câmeras OptiTrack Flex 13 para rastreamento 3D preciso de instrumentos cirúrgicos durante procedimentos de corticotomia. Financiado por Bolsa de Pesquisa Mitacs do Governo do Canadá.</p>
+        <div class="timeline-role">Estágio em Pesquisa -> Motion Capture e Simulação Neurocirúrgica</div>
+        <p class="timeline-desc">Desenvolvi uma camada de comunicação em C++ substituindo o PLUS Toolkit para integração entre OptiTrack Motive e 3D Slicer via OpenIGTLink, sustentando 300+ pacotes/segundo para simulação neurocirúrgica em tempo real com baixa latência. Integrei câmeras OptiTrack Flex 13 para rastreamento 3D preciso de instrumentos cirúrgicos durante procedimentos de corticotomia. Financiado por Bolsa de Pesquisa Mitacs do Governo do Canadá.</p>
         <div class="timeline-chips">
           <span class="chip accent">C++</span>
           <span class="chip accent">OpenIGTLink</span>
@@ -849,8 +867,8 @@ const page = `
         <div class="timeline-where">NA-MIC Project Week<br>ETS Montreal</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Desenvolvedor Hackathon — Streaming em Tempo Real de Point Cloud</div>
-        <p class="timeline-desc">Desenvolvi um sistema de streaming em tempo real de point clouds 3D e superfícies para o 3D Slicer usando OpenIGTLink. Realizei benchmarks de múltiplas abordagens de streaming — atingindo point clouds de 900 pontos a ~30 FPS e meshes de 100.000 pontos a ~60 FPS. Combinação de ciência da computação, engenharia biomédica e computação de imagens médicas.</p>
+        <div class="timeline-role">Hackathon -> Streaming em Tempo Real de Point Cloud</div>
+        <p class="timeline-desc">Desenvolvi um sistema de streaming em tempo real de point clouds 3D e superfícies para o 3D Slicer usando OpenIGTLink. Realizei benchmarks de múltiplas abordagens de streaming, atingindo point clouds de 900 pontos a ~30 FPS e meshes de 100.000 pontos a ~60 FPS. Combinação de ciência da computação, engenharia biomédica e computação de imagens médicas.</p>
         <div class="timeline-chips">
           <span class="chip accent">C++</span>
           <span class="chip accent">VTK / ITK</span>
@@ -867,8 +885,8 @@ const page = `
         <div class="timeline-where">HUM<br>Hospital UEM</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Estagiário — Transformação Digital e Análise de Dados</div>
-        <p class="timeline-desc">Integrei uma equipe interdisciplinar de CC, Estatística e Comunicação impulsionando a transformação digital em um hospital escola regional. Automatizei respostas de e-mail do NSP-HUM — reduzindo o tempo de resposta em 30%. Desenvolvi dashboards em tempo real para indicadores de segurança do paciente e criei fluxos de trabalho orientados a dados para maior transparência operacional.</p>
+        <div class="timeline-role">Estágio -> Transformação Digital e Análise de Dados</div>
+        <p class="timeline-desc">Integrei uma equipe interdisciplinar de CC, Estatística e Comunicação impulsionando a transformação digital em um hospital escola regional. Automatizei respostas de e-mail do NSP-HUM, reduzindo o tempo de resposta em 30%. Desenvolvi dashboards em tempo real para indicadores de segurança do paciente e criei fluxos de trabalho orientados a dados para maior transparência operacional.</p>
         <div class="timeline-chips">
           <span class="chip accent2">Python</span>
           <span class="chip accent2">Visualização de Dados</span>
@@ -885,7 +903,7 @@ const page = `
         <div class="timeline-where">Laboratório de Pesquisa<br>UEM</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Pesquisador de Iniciação Científica — Computer Vision para Multi-Robôs</div>
+        <div class="timeline-role">Pesquisador de Iniciação Científica -> Computer Vision para Multi-Robôs</div>
         <p class="timeline-desc">Desenvolvi o Manna Bot-Eye: um sistema de coordenação centralizado para múltiplos robôs móveis utilizando câmeras com visão aérea, processamento de espaço de cores HSV e controle Bluetooth em tempo real via ESP32. Projetei o pipeline completo de percepção–decisão–controle com detecção de contornos, estimativa de orientação e despacho de comandos de movimentação. Financiado pela Fundação Araucária; orientado pela Profa. Linnyer Beatrys Ruiz Aylon.</p>
         <div class="timeline-chips">
           <span class="chip accent3">Python</span>
@@ -904,7 +922,7 @@ const page = `
         <div class="timeline-where">UEM<br>Maringá, PR</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Bacharelado em Ciência da Computação — Universidade Estadual de Maringá</div>
+        <div class="timeline-role">Bacharelado em Ciência da Computação -> Universidade Estadual de Maringá</div>
         <p class="timeline-desc">Programa rigoroso cobrindo algoritmos, estruturas de dados, arquitetura de computadores, engenharia de software, bancos de dados, IA/ML, sistemas distribuídos, teoria computacional, processamento digital de imagens e programação concorrente.</p>
         <div class="timeline-chips">
           <span class="chip">Em andamento</span>
@@ -929,7 +947,7 @@ const page = `
       <span class="project-num">01 — Produção</span>
       <h3 class="project-title">Parusya</h3>
       <div class="project-sub">Java · Spring Boot · React · PostgreSQL</div>
-      <p class="project-desc">Sistema de controle de presença por QR Code desenvolvido individualmente — da concepção à produção. Substituiu o check-in manual em eventos recorrentes por um pipeline digital: cada participante tem um QR pessoal escaneado na chegada, gerando um registro imutável com timestamp.</p>
+      <p class="project-desc">Sistema de controle de presença por QR Code desenvolvido individualmente, da concepção à produção. Substituiu o check-in manual em eventos recorrentes por um pipeline digital: cada participante tem um QR pessoal escaneado na chegada, gerando um registro imutável com timestamp.</p>
       <div class="project-highlight">
         300+ participantes ativos semanalmente · No ar em parusya.com.br
       </div>
@@ -949,7 +967,7 @@ const page = `
       <span class="project-num">02 — Pessoal</span>
       <h3 class="project-title">TaskFlow</h3>
       <div class="project-sub">Java · Spring Boot · Vanilla JS</div>
-      <p class="project-desc">Aplicação full-stack de gerenciamento de tarefas demonstrando arquitetura limpa: APIs RESTful com Spring Web + Spring Data JPA, separação de DTOs/Mappers, tratamento global de erros e frontend responsivo com tema escuro em JavaScript ES6+ puro — sem frameworks.</p>
+      <p class="project-desc">Aplicação full-stack de gerenciamento de tarefas demonstrando arquitetura limpa: APIs RESTful com Spring Web + Spring Data JPA, separação de DTOs/Mappers, tratamento global de erros e frontend responsivo com tema escuro em JavaScript ES6+ puro, sem frameworks.</p>
       <div class="project-highlight">
         CRUD completo · Filtros por prioridade e status · Dashboard de estatísticas
       </div>
@@ -1134,7 +1152,7 @@ const page = `
 <!-- CONTACT -->
 <footer id="contact">
   <div class="footer-left">
-    Vamos<br><p>conversar_</p>
+    Vamos<br><p>conversar<span class="cursor"></span></p>
   </div>
   <div class="footer-contact">
     <a href="mailto:vitor.azpadovani@gmail.com">vitor.azpadovani@gmail.com</a>
