@@ -1,10 +1,10 @@
 const page = `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vitor — Computer Science</title>
+<title>Vitor — Ciência da Computação</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -755,33 +755,33 @@ const page = `
 <nav>
   <span class="nav-logo">Vitor</span>
   <ul class="nav-links">
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#awards">Awards</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#experience">Experiência</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#awards">Prêmios</a></li>
+    <li><a href="#contact">Contato</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Computer Science · Maringá, Brazil</div>
+    <div class="hero-eyebrow">Ciência da Computação · Maringá, Brasil</div>
     <h1 class="hero-name">Vitor<br><em>Padovani</em></h1>
     <p class="hero-desc">
-      CS student at State University of Maringá building production systems, research pipelines, and real-time simulations — from hospital automation to neurosurgical tracking in Montreal.
+      Estudante de CC na Universidade Estadual de Maringá desenvolvendo sistemas em produção, pipelines de pesquisa e simulações em tempo real — da automação hospitalar ao rastreamento neurocirúrgico em Montreal.
     </p>
     <div class="hero-tags">
-      <span class="tag">Backend Engineering</span>
+      <span class="tag">Engenharia Backend</span>
       <span class="tag">Computer Vision</span>
-      <span class="tag">Medical Imaging</span>
-      <span class="tag">Embedded Systems</span>
-      <span class="tag">Data Engineering</span>
+      <span class="tag">Imagens Médicas</span>
+      <span class="tag">Sistemas Embarcados</span>
+      <span class="tag">Engenharia de Dados</span>
       <span class="tag">Full-Stack</span>
     </div>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">Get in Touch</a>
-      <a href="#projects" class="btn btn-outline">View Projects</a>
+      <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+      <a href="#projects" class="btn btn-outline">Ver Projetos</a>
     </div>
   </div>
   <div class="hero-right">
@@ -794,19 +794,19 @@ const page = `
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-number">1000+</div>
-        <div class="stat-label">Monthly active users</div>
+        <div class="stat-label">Usuários ativos mensais</div>
       </div>
       <div class="stat">
         <div class="stat-number">300+</div>
-        <div class="stat-label">Packets/sec pipeline</div>
+        <div class="stat-label">Pacotes/seg no pipeline</div>
       </div>
       <div class="stat">
         <div class="stat-number">2×</div>
-        <div class="stat-label">Hackathon champion</div>
+        <div class="stat-label">Campeão de hackathon</div>
       </div>
       <div class="stat">
         <div class="stat-number">3</div>
-        <div class="stat-label">Countries & labs</div>
+        <div class="stat-label">Países e laboratórios</div>
       </div>
     </div>
   </div>
@@ -816,26 +816,26 @@ const page = `
 <section id="experience">
   <div class="section-header">
     <span class="section-num">01</span>
-    <h2 class="section-title">Experience</h2>
+    <h2 class="section-title">Experiência</h2>
     <div class="section-line"></div>
   </div>
   <div class="timeline">
 
     <div class="timeline-item">
       <div class="timeline-meta">
-        <div class="timeline-date">May–Jul 2025</div>
+        <div class="timeline-date">Mai–Jul 2025</div>
         <div class="timeline-where">Montreal<br>Neurological Inst.</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Research Intern — Motion Capture & Neurosurgical Simulation</div>
-        <p class="timeline-desc">Built a custom C++ communication layer replacing the PLUS Toolkit for seamless OptiTrack Motive ↔ 3D Slicer data exchange via OpenIGTLink — sustaining 300+ packets/second for low-latency real-time neurosurgical simulation. Integrated OptiTrack Flex 13 cameras for precise 3D surgical tool tracking during corticotomy procedures. Funded by a Mitacs Research Scholarship from the Government of Canada.</p>
+        <div class="timeline-role">Estagiário de Pesquisa — Motion Capture e Simulação Neurocirúrgica</div>
+        <p class="timeline-desc">Desenvolvi uma camada de comunicação em C++ substituindo o PLUS Toolkit para integração entre OptiTrack Motive e 3D Slicer via OpenIGTLink — sustentando 300+ pacotes/segundo para simulação neurocirúrgica em tempo real com baixa latência. Integrei câmeras OptiTrack Flex 13 para rastreamento 3D preciso de instrumentos cirúrgicos durante procedimentos de corticotomia. Financiado por Bolsa de Pesquisa Mitacs do Governo do Canadá.</p>
         <div class="timeline-chips">
           <span class="chip accent">C++</span>
           <span class="chip accent">OpenIGTLink</span>
           <span class="chip accent">VTK</span>
           <span class="chip accent">NatNet SDK</span>
-          <span class="chip">Medical Imaging</span>
-          <span class="chip">Mitacs Scholar</span>
+          <span class="chip">Imagens Médicas</span>
+          <span class="chip">Bolsista Mitacs</span>
         </div>
       </div>
     </div>
@@ -846,8 +846,8 @@ const page = `
         <div class="timeline-where">NA-MIC Project Week<br>ETS Montreal</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Hackathon Developer — Real-Time Point Cloud Streaming</div>
-        <p class="timeline-desc">Engineered a real-time 3D point cloud & surface streaming system for 3D Slicer using OpenIGTLink. Benchmarked multiple streaming approaches — achieving 900-point clouds at ~30 FPS and 100,000-point meshes at ~60 FPS. Combined computer science, biomedical engineering, and medical image computing.</p>
+        <div class="timeline-role">Desenvolvedor Hackathon — Streaming em Tempo Real de Point Cloud</div>
+        <p class="timeline-desc">Desenvolvi um sistema de streaming em tempo real de point clouds 3D e superfícies para o 3D Slicer usando OpenIGTLink. Realizei benchmarks de múltiplas abordagens de streaming — atingindo point clouds de 900 pontos a ~30 FPS e meshes de 100.000 pontos a ~60 FPS. Combinação de ciência da computação, engenharia biomédica e computação de imagens médicas.</p>
         <div class="timeline-chips">
           <span class="chip accent">C++</span>
           <span class="chip accent">VTK / ITK</span>
@@ -860,17 +860,17 @@ const page = `
 
     <div class="timeline-item">
       <div class="timeline-meta">
-        <div class="timeline-date">Oct 2024–Apr 2025</div>
-        <div class="timeline-where">HUM<br>UEM Hospital</div>
+        <div class="timeline-date">Out 2024–Abr 2025</div>
+        <div class="timeline-where">HUM<br>Hospital UEM</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Intern — Digital Transformation & Data Analytics</div>
-        <p class="timeline-desc">Integrated an interdisciplinary team across CS, Statistics, and Communications driving digital transformation at a regional teaching hospital. Automated NSP-HUM email responses — cutting response times by 30%. Built real-time dashboards for patient safety indicators and developed data-driven workflows improving operational transparency.</p>
+        <div class="timeline-role">Estagiário — Transformação Digital e Análise de Dados</div>
+        <p class="timeline-desc">Integrei uma equipe interdisciplinar de CC, Estatística e Comunicação impulsionando a transformação digital em um hospital escola regional. Automatizei respostas de e-mail do NSP-HUM — reduzindo o tempo de resposta em 30%. Desenvolvi dashboards em tempo real para indicadores de segurança do paciente e criei fluxos de trabalho orientados a dados para maior transparência operacional.</p>
         <div class="timeline-chips">
           <span class="chip accent2">Python</span>
-          <span class="chip accent2">Data Visualization</span>
-          <span class="chip accent2">Process Automation</span>
-          <span class="chip">Healthcare Analytics</span>
+          <span class="chip accent2">Visualização de Dados</span>
+          <span class="chip accent2">Automação de Processos</span>
+          <span class="chip">Analytics em Saúde</span>
           <span class="chip">ETL</span>
         </div>
       </div>
@@ -878,34 +878,34 @@ const page = `
 
     <div class="timeline-item">
       <div class="timeline-meta">
-        <div class="timeline-date">May 2023–Apr 2024</div>
-        <div class="timeline-where">Research Lab<br>UEM</div>
+        <div class="timeline-date">Mai 2023–Abr 2024</div>
+        <div class="timeline-where">Laboratório de Pesquisa<br>UEM</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Undergraduate Researcher — Multi-Robot Computer Vision</div>
-        <p class="timeline-desc">Developed Manna Bot-Eye: a centralized coordination system for multiple mobile robots using bird's eye view cameras, HSV color-space processing, and real-time Bluetooth control via ESP32. Designed the full perception–decision–control pipeline with contour detection, orientation estimation, and movement command dispatch. Funded by Fundação Araucária; supervised by Prof. Linnyer Beatrys Ruiz Aylon.</p>
+        <div class="timeline-role">Pesquisador de Iniciação Científica — Computer Vision para Multi-Robôs</div>
+        <p class="timeline-desc">Desenvolvi o Manna Bot-Eye: um sistema de coordenação centralizado para múltiplos robôs móveis utilizando câmeras com visão aérea, processamento de espaço de cores HSV e controle Bluetooth em tempo real via ESP32. Projetei o pipeline completo de percepção–decisão–controle com detecção de contornos, estimativa de orientação e despacho de comandos de movimentação. Financiado pela Fundação Araucária; orientado pela Profa. Linnyer Beatrys Ruiz Aylon.</p>
         <div class="timeline-chips">
           <span class="chip accent3">Python</span>
           <span class="chip accent3">OpenCV</span>
           <span class="chip accent3">ESP32</span>
-          <span class="chip">Embedded Systems</span>
+          <span class="chip">Sistemas Embarcados</span>
           <span class="chip">Computer Vision</span>
-          <span class="chip">Robotics</span>
+          <span class="chip">Robótica</span>
         </div>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-meta">
-        <div class="timeline-date">Feb 2022–Present</div>
+        <div class="timeline-date">Fev 2022–Presente</div>
         <div class="timeline-where">UEM<br>Maringá, PR</div>
       </div>
       <div class="timeline-content">
-        <div class="timeline-role">Bachelor of Computer Science — State University of Maringá</div>
-        <p class="timeline-desc">Rigorous program covering algorithms, data structures, computer architecture, software engineering, databases, AI/ML, distributed systems, computational theory, digital image processing, and concurrent programming.</p>
+        <div class="timeline-role">Bacharelado em Ciência da Computação — Universidade Estadual de Maringá</div>
+        <p class="timeline-desc">Programa rigoroso cobrindo algoritmos, estruturas de dados, arquitetura de computadores, engenharia de software, bancos de dados, IA/ML, sistemas distribuídos, teoria computacional, processamento digital de imagens e programação concorrente.</p>
         <div class="timeline-chips">
-          <span class="chip">In Progress</span>
-          <span class="chip">Expected 2026</span>
+          <span class="chip">Em andamento</span>
+          <span class="chip">Previsão: 2026</span>
         </div>
       </div>
     </div>
@@ -917,18 +917,18 @@ const page = `
 <section id="projects">
   <div class="section-header">
     <span class="section-num">02</span>
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Projetos</h2>
     <div class="section-line"></div>
   </div>
   <div class="projects-grid">
 
     <div class="project-card">
-      <span class="project-num">01 — Production</span>
+      <span class="project-num">01 — Produção</span>
       <h3 class="project-title">Parusya</h3>
       <div class="project-sub">Java · Spring Boot · React · PostgreSQL</div>
-      <p class="project-desc">QR Code attendance system built solo — from conception to production. Replaced manual check-in flows at recurring events with a digital pipeline: each participant has a personal QR scanned on arrival, generating an immutable timestamped log.</p>
+      <p class="project-desc">Sistema de controle de presença por QR Code desenvolvido individualmente — da concepção à produção. Substituiu o check-in manual em eventos recorrentes por um pipeline digital: cada participante tem um QR pessoal escaneado na chegada, gerando um registro imutável com timestamp.</p>
       <div class="project-highlight">
-        300+ active participants weekly · Live at parusya.com.br
+        300+ participantes ativos semanalmente · No ar em parusya.com.br
       </div>
       <div class="timeline-chips">
         <span class="chip accent">Java 21</span>
@@ -943,12 +943,12 @@ const page = `
     </div>
 
     <div class="project-card blue">
-      <span class="project-num">02 — Personal</span>
+      <span class="project-num">02 — Pessoal</span>
       <h3 class="project-title">TaskFlow</h3>
       <div class="project-sub">Java · Spring Boot · Vanilla JS</div>
-      <p class="project-desc">Full-stack task management app demonstrating clean architecture: RESTful APIs with Spring Web + Spring Data JPA, DTO/Mapper separation, global error handling, and a responsive dark-themed frontend in pure ES6+ JavaScript — no frameworks.</p>
+      <p class="project-desc">Aplicação full-stack de gerenciamento de tarefas demonstrando arquitetura limpa: APIs RESTful com Spring Web + Spring Data JPA, separação de DTOs/Mappers, tratamento global de erros e frontend responsivo com tema escuro em JavaScript ES6+ puro — sem frameworks.</p>
       <div class="project-highlight">
-        Full CRUD · Priority & status filters · Statistics dashboard
+        CRUD completo · Filtros por prioridade e status · Dashboard de estatísticas
       </div>
       <div class="timeline-chips">
         <span class="chip accent2">Java 17</span>
@@ -960,36 +960,36 @@ const page = `
     </div>
 
     <div class="project-card pink">
-      <span class="project-num">03 — Tooling</span>
+      <span class="project-num">03 — Ferramentas</span>
       <h3 class="project-title">PPR Course Downloader</h3>
       <div class="project-sub">Python · Selenium · SQLite FTS5</div>
-      <p class="project-desc">End-to-end data pipeline: Selenium + BeautifulSoup4 scraper with session persistence via cookie injection, RegEx data sanitization, ETL into SQLite with referential integrity, and a CLI with FTS5 inverted indices + custom ranking algorithm for sub-millisecond full-text search.</p>
+      <p class="project-desc">Pipeline de dados de ponta a ponta: scraper com Selenium + BeautifulSoup4 com persistência de sessão via injeção de cookies, sanitização de dados com RegEx, ETL para SQLite com integridade referencial, e CLI com índices invertidos FTS5 + algoritmo de ranking customizado para busca full-text em sub-milissegundos.</p>
       <div class="project-highlight">
-        Local search engine · Hierarchical file system organization
+        Motor de busca local · Organização hierárquica do sistema de arquivos
       </div>
       <div class="timeline-chips">
         <span class="chip accent3">Python</span>
         <span class="chip accent3">Selenium</span>
         <span class="chip accent3">BeautifulSoup4</span>
         <span class="chip">SQLite FTS5</span>
-        <span class="chip">ETL Pipeline</span>
+        <span class="chip">Pipeline ETL</span>
         <span class="chip">OOP</span>
       </div>
     </div>
 
     <div class="project-card green">
-      <span class="project-num">04 — Research</span>
+      <span class="project-num">04 — Pesquisa</span>
       <h3 class="project-title">Manna Bot-Eye</h3>
       <div class="project-sub">Python · OpenCV · ESP32 · Bluetooth</div>
-      <p class="project-desc">Centralized multi-robot coordination using overhead cameras and HSV image processing. Full perception–decision–control pipeline: contour detection, orientation angle calculation, and wireless command dispatch to ESP32-driven robots in real time.</p>
+      <p class="project-desc">Coordenação centralizada de múltiplos robôs usando câmeras aéreas e processamento de imagem HSV. Pipeline completo de percepção–decisão–controle: detecção de contornos, cálculo do ângulo de orientação e despacho de comandos sem fio para robôs controlados por ESP32 em tempo real.</p>
       <div class="project-highlight">
-        Applicable to cooperative robotics · IEEE VSSS · Funded by Fundação Araucária
+        Aplicável à robótica cooperativa · IEEE VSSS · Financiado pela Fundação Araucária
       </div>
       <div class="timeline-chips">
         <span class="chip" style="border-color:var(--green);color:var(--green)">Python</span>
         <span class="chip" style="border-color:var(--green);color:var(--green)">OpenCV</span>
         <span class="chip" style="border-color:var(--green);color:var(--green)">ESP32</span>
-        <span class="chip">HSV Processing</span>
+        <span class="chip">Processamento HSV</span>
         <span class="chip">Bluetooth</span>
         <span class="chip">Arduino</span>
       </div>
@@ -1002,83 +1002,83 @@ const page = `
 <section id="skills">
   <div class="section-header">
     <span class="section-num">03</span>
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title">Habilidades</h2>
     <div class="section-line"></div>
   </div>
   <div class="skills-layout">
     <div>
-      <div class="skill-group-title">Technical — Proficient</div>
+      <div class="skill-group-title">Técnicas — Proficiente</div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">C++</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-bar-header"><span class="skill-name">C++</span><span class="skill-level">Proficiente</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="--w:90%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">Python</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-bar-header"><span class="skill-name">Python</span><span class="skill-level">Proficiente</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="--w:90%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">Git & Linux</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-bar-header"><span class="skill-name">Git & Linux</span><span class="skill-level">Proficiente</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="--w:88%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">SQL / Databases</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-bar-header"><span class="skill-name">SQL / Bancos de Dados</span><span class="skill-level">Proficiente</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="--w:85%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">Algorithms & Data Structures</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-bar-header"><span class="skill-name">Algoritmos & Estruturas de Dados</span><span class="skill-level">Proficiente</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="--w:85%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">NumPy / Arduino / CMake</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-bar-header"><span class="skill-name">NumPy / Arduino / CMake</span><span class="skill-level">Proficiente</span></div>
         <div class="skill-bar"><div class="skill-bar-fill" style="--w:80%"></div></div>
       </div>
 
-      <div class="skill-group-title" style="margin-top:40px;">Technical — Familiar</div>
+      <div class="skill-group-title" style="margin-top:40px;">Técnicas — Familiarizado</div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">Java / Spring Boot</span><span class="skill-level">Familiar</span></div>
+        <div class="skill-bar-header"><span class="skill-name">Java / Spring Boot</span><span class="skill-level">Familiarizado</span></div>
         <div class="skill-bar"><div class="skill-bar-fill blue" style="--w:75%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">JavaScript / HTML / CSS</span><span class="skill-level">Familiar</span></div>
+        <div class="skill-bar-header"><span class="skill-name">JavaScript / HTML / CSS</span><span class="skill-level">Familiarizado</span></div>
         <div class="skill-bar"><div class="skill-bar-fill blue" style="--w:70%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">VTK / Image Processing</span><span class="skill-level">Familiar</span></div>
+        <div class="skill-bar-header"><span class="skill-name">VTK / Processamento de Imagens</span><span class="skill-level">Familiarizado</span></div>
         <div class="skill-bar"><div class="skill-bar-fill blue" style="--w:68%"></div></div>
       </div>
       <div class="skill-bar-item">
-        <div class="skill-bar-header"><span class="skill-name">Docker / OpenIGTLink</span><span class="skill-level">Familiar</span></div>
+        <div class="skill-bar-header"><span class="skill-name">Docker / OpenIGTLink</span><span class="skill-level">Familiarizado</span></div>
         <div class="skill-bar"><div class="skill-bar-fill blue" style="--w:60%"></div></div>
       </div>
     </div>
     <div>
-      <div class="skill-group-title">Soft Skills</div>
+      <div class="skill-group-title">Habilidades Interpessoais</div>
       <div class="soft-skills">
-        <span class="soft-tag">Initiative</span>
-        <span class="soft-tag">Public Speaking</span>
-        <span class="soft-tag">Bilingual Communication</span>
-        <span class="soft-tag">Resourcefulness</span>
-        <span class="soft-tag">Grit</span>
-        <span class="soft-tag">Collaboration</span>
+        <span class="soft-tag">Iniciativa</span>
+        <span class="soft-tag">Oratória</span>
+        <span class="soft-tag">Comunicação Bilíngue</span>
+        <span class="soft-tag">Criatividade</span>
+        <span class="soft-tag">Resiliência</span>
+        <span class="soft-tag">Colaboração</span>
       </div>
 
-      <div class="skill-group-title" style="margin-top:48px;">Languages</div>
+      <div class="skill-group-title" style="margin-top:48px;">Idiomas</div>
       <div class="lang-row">
         <div class="lang-item">
           <span class="lang-name">Português</span>
-          <span class="lang-level">Native</span>
+          <span class="lang-level">Nativo</span>
         </div>
         <div class="lang-item">
           <span class="lang-name">English</span>
-          <span class="lang-level">Fluent</span>
+          <span class="lang-level">Fluente</span>
         </div>
         <div class="lang-item">
           <span class="lang-name">中文</span>
-          <span class="lang-level">Basic</span>
+          <span class="lang-level">Básico</span>
         </div>
       </div>
 
-      <div class="skill-group-title" style="margin-top:48px;">Certifications</div>
+      <div class="skill-group-title" style="margin-top:48px;">Certificações</div>
       <div class="cert-row">
         <div class="cert-card">
           <div class="cert-issuer">Google</div>
@@ -1097,33 +1097,33 @@ const page = `
 <section id="awards">
   <div class="section-header">
     <span class="section-num">04</span>
-    <h2 class="section-title">Awards & Outreach</h2>
+    <h2 class="section-title">Prêmios & Divulgação</h2>
     <div class="section-line"></div>
   </div>
   <div class="awards-row">
     <div class="award-card">
       <div class="award-icon">🥇</div>
-      <div class="award-title">1st Place — Elotech Hackathon</div>
-      <div class="award-org">AI & Public Management · Nov 2024 · UEM / SECOMP</div>
-      <p class="award-desc">AI-based system to reduce absenteeism in public healthcare — won the track on Artificial Intelligence and Public Management.</p>
+      <div class="award-title">1º Lugar — Hackathon Elotech</div>
+      <div class="award-org">IA & Gestão Pública · Nov 2024 · UEM / SECOMP</div>
+      <p class="award-desc">Sistema baseado em IA para reduzir o absenteísmo na saúde pública — vencedor da trilha de Inteligência Artificial e Gestão Pública.</p>
     </div>
     <div class="award-card">
       <div class="award-icon">🥇</div>
-      <div class="award-title">1st Place — Bitzen Hackathon</div>
-      <div class="award-org">Software Estimation Accuracy · 2025</div>
-      <p class="award-desc">Built a solution improving accuracy, adaptability, and reliability of software effort estimates, winning first place across all submissions.</p>
+      <div class="award-title">1º Lugar — Hackathon Bitzen</div>
+      <div class="award-org">Precisão em Estimativas de Software · 2025</div>
+      <p class="award-desc">Solução desenvolvida para melhorar a precisão, adaptabilidade e confiabilidade de estimativas de esforço em software, conquistando o primeiro lugar entre todas as submissões.</p>
     </div>
     <div class="award-card">
       <div class="award-icon">🏛️</div>
       <div class="award-title">Manna no Museu</div>
-      <div class="award-org">Oscar Niemeyer Museum · Mar 2023 · Curitiba, PR</div>
-      <p class="award-desc">Presented an interactive image processing experiment to schoolchildren and teachers — bridging art, technology, and education through hands-on computer vision demos.</p>
+      <div class="award-org">Museu Oscar Niemeyer · Mar 2023 · Curitiba, PR</div>
+      <p class="award-desc">Apresentei um experimento interativo de processamento de imagens para estudantes e professores — unindo arte, tecnologia e educação por meio de demonstrações práticas de computer vision.</p>
     </div>
     <div class="award-card">
       <div class="award-icon">🍁</div>
-      <div class="award-title">Mitacs Research Scholarship</div>
-      <div class="award-org">Government of Canada · 2025</div>
-      <p class="award-desc">Competitive research funding enabling the motion capture and neurosurgical simulation internship at the Montreal Neurological Institute-Hospital.</p>
+      <div class="award-title">Bolsa de Pesquisa Mitacs</div>
+      <div class="award-org">Governo do Canadá · 2025</div>
+      <p class="award-desc">Financiamento de pesquisa competitivo que viabilizou o estágio em motion capture e simulação neurocirúrgica no Montreal Neurological Institute-Hospital.</p>
     </div>
   </div>
 </section>
@@ -1131,7 +1131,7 @@ const page = `
 <!-- CONTACT -->
 <footer id="contact">
   <div class="footer-left">
-    Let's<br><em>connect.</em>
+    Vamos<br><em>conversar.</em>
   </div>
   <div class="footer-contact">
     <a href="https://parusya.com.br" target="_blank">parusya.com.br</a>
